@@ -1,0 +1,49 @@
+/* calculator.css */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator-container {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.digits {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 10px;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
